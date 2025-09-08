@@ -3,8 +3,8 @@ export default defineAppConfig({
   socials: {
     twitter: 'suburbanrunaway',
     github: 'jack-walton',
-    tiktok: 'jackie'
-    instagram: 'jackie'
+    tiktok: 'jackie',
+    instagram: 'jackie',
   },
   icon: {
     aliases: {
