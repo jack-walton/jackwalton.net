@@ -4,7 +4,7 @@ export default defineAppConfig({
     twitter: 'suburbanrunaway',
     github: 'jack-walton',
     tiktok: 'jackie'
-    instagtam 'jackie'
+    instagram: 'jackie'
   },
   icon: {
     aliases: {
