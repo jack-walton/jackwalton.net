@@ -33,5 +33,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-02-19',
 
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    build: {
+      sourcemap: false, // Vite doesn't support Tailwind sourcemaps. This configuration suppresses the warning message in build.
+    },
+    plugins: [
+      tailwindcss(),
+    ],
+  },
 })
