@@ -35,12 +35,9 @@ I added this code to the bottom of `app.vue`:
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  filter: blur(1rem);
 }
 </style>
 ```
-
-These additions were copy and pasted right out of the [Nuxt transitions documentation](https://nuxt.com/docs/4.x/getting-started/transitions).
 
 To get transitions to work with this app's Markdown slug, I wrapped the `NuxtLayout` component in an `article` element. This prevents DOM errors.
 
