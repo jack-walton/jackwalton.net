@@ -12,6 +12,71 @@ A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [T
 - 🕹&nbsp; [Play online](https://githubblitz.com/Atinux/content-wind/tree/main/.demo)
 - 👀&nbsp; [Demo video](https://twitter.com/Atinux/status/1578505586979012608)
 
+## Transitions
+
+I added transitions page to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
+
+I added this code to `nuxt.config.ts`:
+
+```ts
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
+```
+
+I added this code to the bottom of `app.vue`:
+
+```vue
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
+```
+
+These additions were copy and pasted right out of the [Nuxt transitions documentation](https://nuxt.com/docs/4.x/getting-started/transitions).
+
+To get transitions to work with this app's Markdown slug, I wrapped the `NuxtLayout` component in an `article` element. This prevents DOM errors.
+
+```vue
+<template>
+  <article>
+  <NuxtLayout :name="page?.layout as LayoutKey || 'default'" class="bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+      class="prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900"
+    />
+  </NuxtLayout>
+</article>
+</template>
+```
+
+
+## Vite Sourcemap
+
+I disabled the Vite sourcemap feature. When used with Tailwind, it triggered warnings during the build. This is a [known issue](https://github.com/tailwindlabs/tailwindcss/discussions/16119).
+
+`nuxt.config.ts`
+
+```ts
+  vite: {
+    build: {
+      sourcemap: false, // Vite doesn't support Tailwind sourcemaps. This configuration suppresses the warning message in build.
+    },
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+```
+
+
 ## Features
 
 - Create pages in Markdown in the `content/` directory
