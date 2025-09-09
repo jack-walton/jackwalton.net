@@ -1,18 +1,10 @@
-[![Content Wind](https://content-wind.nuxt.space/cover.jpg)](https://content-wind.nuxt.space)
+# Jack's Website
 
-# Content Wind
+This is a website built with Nuxt using the Content Wind theme. I have made a few enhancements that are documented below. The original documentation is included at the bottom of this README.
 
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
-[![Nuxt Studio][nuxt-studio-src]][nuxt-studio-href]
+## Aftermarket Updates
 
-A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [TailwindCSS](https://tailwindcss.com), [Iconify](https://iconify.design) and [Vue components](https://vuejs.org).
-
-- 📖&nbsp; [Demo & Docs](https://content-wind.nuxt.space)
-- 🕹&nbsp; [Play online](https://githubblitz.com/Atinux/content-wind/tree/main/.demo)
-- 👀&nbsp; [Demo video](https://twitter.com/Atinux/status/1578505586979012608)
-
-## Transitions
+### Transitions
 
 I added transitions page to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
 
@@ -56,7 +48,7 @@ To get transitions to work with this app's Markdown slug, I wrapped the `NuxtLay
 ```
 
 
-## Vite Sourcemap
+### Vite Sourcemap
 
 I disabled the Vite sourcemap feature. When used with Tailwind, it triggered warnings during the build. This is a [known issue](https://github.com/tailwindlabs/tailwindcss/discussions/16119).
 
@@ -74,7 +66,23 @@ I disabled the Vite sourcemap feature. When used with Tailwind, it triggered war
 ```
 
 
-## Features
+## Original Documentation
+
+[![Content Wind](https://content-wind.nuxt.space/cover.jpg)](https://content-wind.nuxt.space)
+
+### Content Wind
+
+[![License][license-src]][license-href]
+[![Nuxt][nuxt-src]][nuxt-href]
+[![Nuxt Studio][nuxt-studio-src]][nuxt-studio-href]
+
+A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [TailwindCSS](https://tailwindcss.com), [Iconify](https://iconify.design) and [Vue components](https://vuejs.org).
+
+- 📖&nbsp; [Demo & Docs](https://content-wind.nuxt.space)
+- 🕹&nbsp; [Play online](https://githubblitz.com/Atinux/content-wind/tree/main/.demo)
+- 👀&nbsp; [Demo video](https://twitter.com/Atinux/status/1578505586979012608)
+
+#### Features
 
 - Create pages in Markdown in the `content/` directory
 - Use [Nuxt layouts](https://nuxt.com/docs/guide/directory-structure/layouts) in your Markdown pages
@@ -88,9 +96,9 @@ I disabled the Vite sourcemap feature. When used with Tailwind, it triggered war
 - Deploy on any Node or Static hosting: GH Pages, Vercel, Netlify, Heroku, etc.
 - Live edit on [Nuxt Studio](https://nuxt.studio)
 
-## Get started
+#### Get started
 
-### Local
+##### Local
 
 ```bash
 npx nuxi@latest init -t github:atinux/content-wind my-website
@@ -98,7 +106,7 @@ npx nuxi@latest init -t github:atinux/content-wind my-website
 
 Then follow the instructions and you are ready to go :rocket:
 
-## License 📎
+#### License 📎
 
 [MIT License](./LICENSE)
 
