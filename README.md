@@ -4,9 +4,24 @@ This is a website built with Nuxt using the Content Wind theme. I have made a fe
 
 ## Aftermarket Updates
 
+### Dependency Override
+
+During install, I got the following warning message:
+
+```
+ WARN  1 deprecated subdependencies found: @types/parse-path@7.1.0
+```
+
+I traced this back to the `parse-url` package. I added this code to the pnpm object in `package.json` to exclude the deprecated subdependency:
+```
+    "overrides": {
+      "parse-url": "^10.0.3"
+    }
+```
+
 ### Transitions
 
-I added transitions page to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
+I added page transitions to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
 
 I added this code to `nuxt.config.ts`:
 
