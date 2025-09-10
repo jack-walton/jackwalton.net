@@ -4,19 +4,6 @@ This is a website built with Nuxt using the Content Wind theme. I have made a fe
 
 ## Aftermarket Updates
 
-### Dependency Override
-
-During install, I got the following warning message:
-
-```
- WARN  1 deprecated subdependencies found: @types/parse-path@7.1.0
-```
-
-I traced this back to the `parse-url` package. I added this code to the pnpm object in `package.json` to exclude the deprecated subdependency:
-```
-    "overrides": {
-      "parse-url": "^10.0.3"
-    }
 ```
 
 ### Transitions
