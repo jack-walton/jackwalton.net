@@ -23,12 +23,12 @@ useSeoMeta(page.value?.seo || {})
 
 <template>
   <article>
-  <NuxtLayout :name="page?.layout as LayoutKey || 'default'" class="bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
-    <ContentRenderer
-      v-if="page"
-      :value="page"
-      class="prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900"
-    />
-  </NuxtLayout>
-</article>
+    <NuxtLayout :name="page?.layout as LayoutKey || 'default'" class="bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
+      <ContentRenderer
+        v-if="page"
+        :value="page"
+        class="prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900"
+      />
+    </NuxtLayout>
+  </article>
 </template>
