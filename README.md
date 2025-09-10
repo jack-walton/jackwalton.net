@@ -4,8 +4,6 @@ This is a website built with Nuxt using the Content Wind theme. I have made a fe
 
 ## Aftermarket Updates
 
-```
-
 ### Transitions
 
 I added page transitions to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
