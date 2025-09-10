@@ -6,6 +6,17 @@ This is a website built with Nuxt using the Content Wind theme. I have made a fe
 
 ```
 
+### Dark Mode
+
+I removed the toggle switch from the `AppNavBar` component.
+
+```vue
+<ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
+
+```
+
+I also broke up the colors in the `main.css` stylesheet so that dark mode and light mode automatically responds to the user's system preferences rather than a toggle.
+
 ### Transitions
 
 I added page transitions to the app. This enhancement improves the user experience as each page must be fully assembled before it is displayed. That way, the icons and images don't jiggle around and shift as you move from page to page. I upgraded to Nuxt 4 to do this.
@@ -38,14 +49,14 @@ To get transitions to work with this app's Markdown slug, I wrapped the `NuxtLay
 ```vue
 <template>
   <article>
-  <NuxtLayout :name="page?.layout as LayoutKey || 'default'" class="bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
-    <ContentRenderer
-      v-if="page"
-      :value="page"
-      class="prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900"
-    />
-  </NuxtLayout>
-</article>
+    <NuxtLayout :name="page?.layout as LayoutKey || 'default'" class="bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
+      <ContentRenderer
+        v-if="page"
+        :value="page"
+        class="prose dark:prose-invert prose-pre:bg-gray-100 dark:prose-pre:bg-gray-900"
+      />
+    </NuxtLayout>
+  </article>
 </template>
 ```
 

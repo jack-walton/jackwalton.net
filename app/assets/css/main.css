@@ -1,13 +1,30 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@custom-variant dark (&:where(.dark, .dark *));
+
+/* No need for the custom dark variant anymore, as we're using media queries */
 
 @source "../../../content/**/*";
 
+/* Light mode (default) */
 body {
-  @apply bg-gray-50 text-black dark:bg-gray-900 dark:text-white;
+  @apply bg-gray-50 text-black;
 }
 
 .prose a:not(h2 a, h3 a, h4 a, h5 a, h6 a, button a) {
-  @apply text-sky-500 dark:text-sky-400;
+  @apply text-sky-500;
+}
+
+/* Dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+
+  .prose a:not(h2 a, h3 a, h4 a, h5 a, h6 a, button a) {
+    @apply text-sky-400;
+  }
+
+  /* If you have other elements using dark: variants elsewhere, wrap them here too */
+  /* Example: If you have .some-class { @apply bg-white dark:bg-black; } */
+  /* Move the dark part inside: .some-class { @apply bg-white; } and then inside media: .some-class { @apply bg-black; } */
 }
