@@ -98,9 +98,8 @@ A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [T
 - Create pages in Markdown in the `content/` directory
 - Use [Nuxt layouts](https://nuxt.com/docs/guide/directory-structure/layouts) in your Markdown pages
 - Enjoy meta tag generation from Markdown files
-- Configurable prose components with [Nuxt Typography](https://typography.nuxt.space)
-- Generated navigation based on your pages
-- Switch between Light & Dark mode :moon:
+- Configure prose components with [Nuxt Typography](https://typography.nuxt.space)
+- Generate navigation based on your pages
 - Access 200,000 icons from 100+ icon sets with the `<Icon>` component
 - Highlight code blocks with [Shiki](https://shiki.style)
 - Create Vue components and use them in Markdown
@@ -114,8 +113,6 @@ A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [T
 ```bash
 npx nuxi@latest init -t github:atinux/content-wind my-website
 ```
-
-Then follow the instructions and you are ready to go :rocket:
 
 #### License 📎
 
