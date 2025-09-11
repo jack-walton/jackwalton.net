@@ -79,8 +79,6 @@ I disabled the Vite sourcemap feature. When used with Tailwind, it triggered war
 
 ## Original Documentation
 
-[![Content Wind](https://content-wind.nuxt.space/cover.jpg)](https://content-wind.nuxt.space)
-
 ### Content Wind
 
 [![License][license-src]][license-href]
