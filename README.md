@@ -4,8 +4,6 @@ This is a website built with Nuxt using the Content Wind theme. I have made a fe
 
 ## Aftermarket Updates
 
-```
-
 ### Dark Mode
 
 I removed the toggle switch from the `AppNavBar` component.
