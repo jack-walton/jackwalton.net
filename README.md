@@ -1,6 +1,6 @@
 # Jack's Website
 
-This is a website built with Nuxt using the Content Wind theme. I have made a few enhancements that are documented below. The original documentation is included at the bottom of this README.
+This is a website built with Nuxt using the Content Wind theme. I have made a few enhancements that are documented below.
 
 ## Aftermarket Updates
 
@@ -88,10 +88,6 @@ I disabled the Vite sourcemap feature. When used with Tailwind, it triggered war
 [![Nuxt Studio][nuxt-studio-src]][nuxt-studio-href]
 
 A personal website theme powered by [Nuxt Content](https://content.nuxt.com), [TailwindCSS](https://tailwindcss.com), [Iconify](https://iconify.design) and [Vue components](https://vuejs.org).
-
-- 📖&nbsp; [Demo & Docs](https://content-wind.nuxt.space)
-- 🕹&nbsp; [Play online](https://githubblitz.com/Atinux/content-wind/tree/main/.demo)
-- 👀&nbsp; [Demo video](https://twitter.com/Atinux/status/1578505586979012608)
 
 #### Features
 
