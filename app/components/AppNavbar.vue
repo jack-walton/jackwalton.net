@@ -49,6 +49,7 @@ const appConfig = useAppConfig();
       >
         <Icon class="size-5" name="i-simple-icons-bluesky" />
       </a>
+      <ColorModeSwitch class="dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300" />
     </div>
   </div>
 </template>
