@@ -15,7 +15,7 @@ Use icons in Markdown like this, where **icon name** is the name of the icon in 
 :icon{name="icon-name"}
 ```
 
-You can use any icon from the [Iconify](https://iconify.design/) sets. Copy the name of the icon you want to use.  You can also use the <Icon> nuxt component.
+You can use any icon from the [Iconify](https://iconify.design/) sets. Copy the name of the icon you want to use.  You can also use the `<Icon>` Nuxt component.
 
 For the best user experience, download the icon set you plan to use and install it directly in the app.
 
@@ -135,7 +135,7 @@ You can highlight code blocks with [Shiki](https://shiki.style).
 
 You can create [Vue components](https://vuejs.org) and use them in the Markdown files.
 
-## License 📎
+## License
 
 [MIT License](./LICENSE)
 
