@@ -127,6 +127,10 @@ The navigation element places the Markdown files in numerical order from left to
 
 This application currently uses two [Nuxt layouts](https://nuxt.com/docs/4.x/guide/directory-structure/app/layouts). You can define which is used in the Markdown front matter.
 
+## Vale
+
+This application includes Vale prose linting.
+
 ## Syntax Highlighting
 
 You can highlight code blocks with [Shiki](https://shiki.style).
